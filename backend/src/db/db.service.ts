@@ -16,8 +16,7 @@ export class DbService {
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     title TEXT,
                     content TEXT,
-                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                    CHECK (title IS NOT NULL OR content IS NOT NULL)
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             `)
             console.log('Connected to the database sucessfully.');
